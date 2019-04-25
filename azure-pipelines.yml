@@ -1,4 +1,3 @@
-# Node.js
 # Build a general Node.js project with npm.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
@@ -8,7 +7,8 @@ trigger:
 
 pool:
   vmImage: 'Ubuntu-16.04'
- 
+  
+
 steps:
 - task: NodeTool@0
   inputs:
@@ -19,6 +19,4 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
-   buildnumber = $r.$b.$c  where $r is a build pipeline variable that can be set , 
-   $b is some incremental value, and $c is git commit SHA like ​04dfb8c0
   
