@@ -8,9 +8,7 @@ trigger:
 
 pool:
   vmImage: 'Ubuntu-16.04'
- install:
- libboost-all-dev 
-
+ 
 steps:
 - task: NodeTool@0
   inputs:
