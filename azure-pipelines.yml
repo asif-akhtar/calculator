@@ -18,6 +18,7 @@ steps:
 - script: |
     npm install
     npm run build
-     buildnumber = $r.$b.$c  where $r is a build pipeline variable that can be set , 
-     $b is some incremental value, and $c is git commit SHA like ​04dfb8c0
   displayName: 'npm install and build'
+   buildnumber = $r.$b.$c  where $r is a build pipeline variable that can be set , 
+   $b is some incremental value, and $c is git commit SHA like ​04dfb8c0
+  
